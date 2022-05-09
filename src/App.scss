@@ -1,0 +1,6 @@
+@use "./asset/sass/variables" as *;
+
+.greeting__heading {
+  background-color: red;
+  border: 10px solid $color-primary;
+}

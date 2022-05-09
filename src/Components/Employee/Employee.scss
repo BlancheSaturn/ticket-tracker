@@ -1,0 +1,16 @@
+@use "../../asset/sass/variables" as *;
+
+.employee-contents {
+  border: 2px solid maroon;
+  height: 50vh;
+  width: 50vh;
+
+  &__add {
+    height: 0.01px;
+    width: 0.01px;
+  }
+  &__sub {
+    height: 1px;
+    width: 1px;
+  }
+}

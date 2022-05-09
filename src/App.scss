@@ -1,6 +1,14 @@
 @use "./asset/sass/variables" as *;
 
-.greeting__heading {
-  background-color: red;
+.tracker {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tracker__heading {
   border: 10px solid $color-primary;
+  width: 100vh;
+  height: 80vh;
+  padding: 0 auto;
+  margin: 10px;
 }

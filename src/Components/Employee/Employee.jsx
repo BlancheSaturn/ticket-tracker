@@ -7,30 +7,37 @@ const Employee = ({ name, role }) => {
   const [counter, setCounter] = useState(0);
 
   const handleIncrement = () => {
-    setCounter((count) => count + 1);
+    setCounter(counter + 1);
   };
 
   const handleDecrement = () => {
-    setCounter((count) => count - 1);
+    setCounter(counter - 1);
   };
 
   return (
-    <div className="employee-contents">
-      <p>{name}</p>
-      <p>{role}</p>
-      <img
-        src={addition}
-        alt=""
-        onClick={handleIncrement}
-        className="employee__add"
-      />
-      <img
-        src={subtraction}
-        alt=""
-        onClick={handleDecrement}
-        className="employee__sub"
-      />
-    </div>
+    <section>
+      <div className="employee-content">
+        <p>
+          {name} <br /> {role}{" "}
+        </p>
+        <div className="employee__counter">
+          <p className="count">Counter</p>
+          <p className="count">{counter}</p>
+          <img
+            src={subtraction}
+            alt=""
+            onClick={handleDecrement}
+            className="employee__sub--sign"
+          />
+          <img
+            src={addition}
+            alt=""
+            onClick={handleIncrement}
+            className="employee__add--sign"
+          />
+        </div>
+      </div>
+    </section>
   );
 };
 

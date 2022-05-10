@@ -1,16 +1,23 @@
 @use "../../asset/sass/variables" as *;
 
-.employee-contents {
+.employee-content {
   border: 2px solid maroon;
-  height: 50vh;
-  width: 50vh;
+  height: 220px;
+  width: 200px;
+  position: relative;
 
-  &__add {
+  &__add--sign {
     height: 0.01px;
     width: 0.01px;
   }
-  &__sub {
+  &__sub--sign {
     height: 1px;
     width: 1px;
   }
+}
+
+.employee__counter {
+  border: 2px solid black;
+  width: 200px;
+  height: 150px;
 }

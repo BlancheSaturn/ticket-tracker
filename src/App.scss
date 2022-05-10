@@ -1,14 +1,16 @@
 @use "./asset/sass/variables" as *;
 
-.tracker {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.tracker__heading {
-  border: 10px solid $color-primary;
-  width: 100vh;
-  height: 80vh;
+.app {
   padding: 0 auto;
   margin: 10px;
+}
+
+.tracker {
+  display: flex;
+  flex-direction: column;
+  // grid-template-columns: repeat(4, 1fr);
+  // grid-template-rows: max-content;
+  // justify-content: center;
+  // align-items: center;
+  border: 10px solid $color-primary;
 }

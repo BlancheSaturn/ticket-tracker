@@ -23,18 +23,21 @@ const Employee = ({ name, role }) => {
         <div className="employee__counter">
           <p className="count">Counter</p>
           <p className="count">{counter}</p>
-          <img
-            src={subtraction}
-            alt=""
-            onClick={handleDecrement}
-            className="employee__sub--sign"
-          />
-          <img
-            src={addition}
-            alt=""
-            onClick={handleIncrement}
-            className="employee__add--sign"
-          />
+          <div className="images">
+            <img
+              src={subtraction}
+              alt=""
+              onClick={handleDecrement}
+              className="employee__sub--sign"
+            />
+
+            <img
+              src={addition}
+              alt=""
+              onClick={handleIncrement}
+              className="employee__add--sign"
+            />
+          </div>
         </div>
       </div>
     </section>

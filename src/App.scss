@@ -3,14 +3,25 @@
 .app {
   padding: 0 auto;
   margin: 10px;
+  align-items: center;
 }
-
+.tracker__employee {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
 .tracker {
-  display: flex;
-  flex-direction: column;
+  width: 1400px;
+  height: 850px;
+  justify-content: center;
+  align-items: center;
   // grid-template-columns: repeat(4, 1fr);
   // grid-template-rows: max-content;
   // justify-content: center;
   // align-items: center;
   border: 10px solid $color-primary;
+}
+
+.tracker__heading {
+  padding-left: 580px;
 }

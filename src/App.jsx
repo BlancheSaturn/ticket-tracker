@@ -11,9 +11,7 @@ const App = () => {
     <div className="app">
       <section className="tracker">
         <h1 className="tracker__heading">Ticket Tracker</h1>
-        <div className="tracker__employee">
-          <p>{employeeJSX}</p>
-        </div>
+        <div className="tracker__employee">{employeeJSX}</div>
       </section>
     </div>
   );

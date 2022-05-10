@@ -2,22 +2,35 @@
 
 .employee-content {
   border: 2px solid maroon;
-  height: 220px;
+  display: grid;
+  // grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  height: 350px;
   width: 200px;
   position: relative;
+  margin-bottom: 20px;
 
   &__add--sign {
-    height: 0.01px;
-    width: 0.01px;
+    height: 5px;
+    width: 5px;
   }
   &__sub--sign {
-    height: 1px;
-    width: 1px;
+    height: 0.001pt;
+    width: 0.001pt;
   }
 }
 
 .employee__counter {
-  border: 2px solid black;
-  width: 200px;
-  height: 150px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border: 2px solid green;
+  width: 170px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  height: 200px;
+}
+
+.count {
+  align-items: center;
 }

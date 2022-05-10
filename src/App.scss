@@ -1,7 +1,9 @@
 @use "./asset/sass/variables" as *;
 
 .app {
-  padding: 0 auto;
+  display: flex;
+  justify-content: center;
+  padding: 100px;
   margin: 10px;
   align-items: center;
 }
@@ -11,10 +13,11 @@
   grid-template-rows: repeat(2, 1fr);
 }
 .tracker {
-  width: 1400px;
+  width: 1350px;
   height: 850px;
   justify-content: center;
   align-items: center;
+
   // grid-template-columns: repeat(4, 1fr);
   // grid-template-rows: max-content;
   // justify-content: center;

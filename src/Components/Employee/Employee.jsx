@@ -2,18 +2,18 @@ import React, { useState } from "react";
 import "./Employee.scss";
 import addition from "../../asset/images/addition.png";
 import subtraction from "../../asset/images/subtraction.png";
-
 const Employee = ({ name, role }) => {
   const [counter, setCounter] = useState(0);
-
   const handleIncrement = () => {
     setCounter(counter + 1);
   };
-
   const handleDecrement = () => {
-    setCounter(counter - 1);
+    if (counter === 0) {
+      setCounter((counter = 0));
+    } else {
+      setCounter(counter - 1);
+    }
   };
-
   return (
     <section>
       <div className="employee-content">
@@ -30,7 +30,6 @@ const Employee = ({ name, role }) => {
               onClick={handleDecrement}
               className="employee__sub--sign"
             />
-
             <img
               src={addition}
               alt=""
@@ -43,5 +42,4 @@ const Employee = ({ name, role }) => {
     </section>
   );
 };
-
 export default Employee;

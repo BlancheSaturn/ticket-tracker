@@ -3,8 +3,10 @@ import team from "./data/team";
 import Employee from "./Components/Employee/Employee";
 
 const App = () => {
-  const employeeJSX = team.map((member) => {
-    return <Employee name={member.name} role={member.role} />;
+  const employeeJSX = team.map((member, index) => {
+    return (
+      <Employee key={member + index} name={member.name} role={member.role} />
+    );
   });
 
   return (

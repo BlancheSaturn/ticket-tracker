@@ -14,6 +14,7 @@ const Employee = ({ name, role }) => {
       setCounter(counter - 1);
     }
   };
+
   return (
     <section>
       <div className="employee-content">
